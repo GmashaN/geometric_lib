@@ -2,9 +2,36 @@ import math
 
 
 def area(r):
+    '''
+    Возвращает площадь окружности, рассчитанную по формуле S = πR².
+        R - радиус окружности
+
+        Параметры:
+            r (int, float): число
+
+        Возвращаемое значение:
+            multiplication_pi_r_r (int, float): произведение чисел π и R²
+
+        Пример вызова функции:
+            input >> area(1)
+            output << 3.141592653589793
+    '''
     return math.pi * r * r
 
 
 def perimeter(r):
-    return 2 * math.pi * r
+    '''
+        Возвращает периметр окружности, рассчитанную по формуле P = 2πR.
+            R - радиус окружности
 
+            Параметры:
+                r (int, float): число
+
+            Возвращаемое значение:
+                multiplication_pi_r_r_doubled (int, float): удвоенное произведение чисел π и R
+
+            Пример вызова функции:
+                input >> perimeter(1)
+                output << 6.283185307179586
+        '''
+    return 2 * math.pi * r
