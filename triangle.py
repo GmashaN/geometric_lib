@@ -15,7 +15,13 @@ def area(a, h):
             input >> area(3, 8)
             output >> 12
     '''
+    if (type(a) not in [int, float] or type(h) not in [int, float]):
+        return TypeError
+    if (a < 0 or h < 0):
+        return Exception
+
     return a * h / 2
+
 
 def perimeter(a, b, c):
     '''
@@ -36,4 +42,9 @@ def perimeter(a, b, c):
             input >> perimeter(3, 4, 5)
             output >> 12
     '''
+    if (type(a) not in [int, float] or type(b) not in [int, float] or type(c) not in [int, float]):
+        return TypeError
+    if (a < 0 or b < 0 or c < 0):
+        return Exception
+
     return a + b + c

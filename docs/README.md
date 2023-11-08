@@ -160,3 +160,11 @@
     Author: smartiqa <info@smartiqa.ru>
     Date:   Thu Mar 4 14:54:08 2021 +0300
 
+## Unit tests
+- for the file circle.py tests are in circle_test.py
+- for the file rectangle.py tests are in rectangle_test.py
+- for the file triangle.py tests are in triangle_test.py
+- for the file square.py tests are in square_test.py
+
+>Tests check the program for working with the wrong data type, 
+   for negative numbers, for positive integers, for positive floats, for zero

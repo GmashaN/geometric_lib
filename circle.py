@@ -16,6 +16,11 @@ def area(r):
             input >> area(1)
             output << 3.141592653589793
     '''
+    if (type(r) not in [int, float]):
+        return TypeError
+    if (r < 0):
+        return Exception
+
     return math.pi * r * r
 
 
@@ -34,4 +39,9 @@ def perimeter(r):
                 input >> perimeter(1)
                 output << 6.283185307179586
         '''
+    if (type(r) not in [int, float]):
+        return TypeError
+    if (r < 0):
+        return Exception
+
     return 2 * math.pi * r
