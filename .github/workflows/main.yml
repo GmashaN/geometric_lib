@@ -7,6 +7,17 @@ on:
     branches: [new_feature_408440]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
+        with:
+          bundler-cache: true
+      - name: Lint Ruby files
+        run: bundle exec rubocop
   test:
     runs-on: [ubuntu-latest,windows-latest]
 
@@ -14,7 +25,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Set up Python Environment
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v3
       with:
         python-version: '3.x'
     - name: Install Dependencies
