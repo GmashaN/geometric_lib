@@ -2,13 +2,13 @@ name: Build and Test
 
 on:
   push:
-    branches: [new_feature_408440]
+    branches: [GmashaN-patch-2]
   pull_request:
     branches: [new_feature_408440]
 
 jobs:
   test:
-    runs-on: [ubuntu-latest,windows-latest]
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -18,4 +18,4 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run triangle test
-      run: python run triangle_test
+      run: python triangle_test.py test
