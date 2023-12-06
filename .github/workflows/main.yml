@@ -10,10 +10,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-        with:
-          ref: new_feature_408440
+    - uses: actions/checkout@v4
+      with:
+        ref: new_feature_408440
     - name: Install Dependencies
       run: python -m pip install --upgrade pip
 
