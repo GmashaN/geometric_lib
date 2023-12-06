@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
     - name: Run triangle test
       run: python -m unittest triangle_test.py
