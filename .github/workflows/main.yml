@@ -8,6 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
     - name: Run triangle test
       run: python -m unittest triangle_test.py
 
