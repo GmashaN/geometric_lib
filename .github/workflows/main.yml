@@ -2,9 +2,9 @@ name: Build and Test
 
 on:
   push:
-    branches: [main]
+    branches: [new_feature_408440]
   pull_request:
-    branches: [main]
+    branches: [new_feature_408440]
 
 jobs:
   test:
