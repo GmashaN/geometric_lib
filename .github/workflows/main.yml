@@ -13,8 +13,5 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: new_feature_408440
-    - name: Install Dependencies
-      run: python -m pip install --upgrade pip
-
     - name: Run triangle test
       run: python -m unittest triangle_test.py
