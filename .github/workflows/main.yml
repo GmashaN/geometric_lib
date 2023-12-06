@@ -1,0 +1,21 @@
+name: Run tests
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: [ubuntu-latest, windows-latest]
+    steps:
+    - name: Run triangle test
+      run: python -m unittest triangle_test.py
+
+    - name: Run circle test
+      run: python -m unittest circle_test.py
+
+    - name: Run square test
+      run: python -m unittest square_test.py
+
+    - name: Run rectangle test
+      run: python -m unittest rectangle_test.py
